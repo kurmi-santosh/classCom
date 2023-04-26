@@ -1,11 +1,11 @@
 import "./App.css";
 
 import React, { Component } from "react";
-import Counter from "./Components/Counter";
+import { CallbackDemo } from "./Components/MemoCallback/useCallbackDemo";
 
 class App extends Component {
   render() {
-    return <Counter />;
+    return <CallbackDemo />;
   }
 }
 
