@@ -1,11 +1,17 @@
 import "./App.css";
 
 import React, { Component } from "react";
-import { CallbackDemo } from "./Components/MemoCallback/useCallbackDemo";
+import store from "./Components/Redux/store";
+import { Provider } from "react-redux";
+import ClassCounter from "./Components/ClassCounter";
 
 class App extends Component {
   render() {
-    return <CallbackDemo />;
+    return (
+      <Provider store={store}>
+        <ClassCounter />
+      </Provider>
+    );
   }
 }
 

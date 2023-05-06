@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
-    
+class LifeCycleB extends Component {
+     
     shouldComponentUpdate(){
-        console.log('Counter: shouldComponentUpdate');
+        console.log('LifeCycleB: shouldComponentUpdate');
         return true;
     }
 
     getSnapshotBeforeUpdate(prevProps, prevState){
-        console.log('Counter:  getSnapshotBeforeupdate');
+        console.log('LifeCycleB:  getSnapshotBeforeupdate');
         return null;
     }
 
     componentDidMount(){
-        console.log('Counter: componentDidMount');
+        console.log('LifeCycleB: componentDidMount');
     }
 
     componentDidUpdate(){
-        console.log('Counter:  ComponentDidUpdate');
+        console.log('LifeCycleB:  ComponentDidUpdate');
     }
 
     render() {
-        console.log('Counter : render');
+        console.log('LifeCycleB : render');
         return (
             <h2>
               {this.props.count}  
@@ -30,4 +30,4 @@ class Counter extends Component {
     }
 }
 
-export default Counter;
+export default LifeCycleB;

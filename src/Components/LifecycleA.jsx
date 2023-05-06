@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Counter from './Counter';
+import LifeCycleB from './LifeCycleB';
 
 class LifecycleA extends Component {
     
@@ -50,7 +50,7 @@ class LifecycleA extends Component {
         return (
             <>
                 <h2>LifeCycle A</h2>
-                <Counter count={this.state.count}/>
+                <LifeCycleB count={this.state.count}/>
                 <button onClick={this.incrementCount.bind(this)}>Increment</button>
             </>
         );
